@@ -25,7 +25,7 @@ SortDictionary: started and ended
 CallWithAsync2: started
 CallWithAsync2: started
 DelayTimer: Call 1
-DelayTimer: 1 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer started
 SortDictionary: started and ended
 CallWithAsync2: started
 SortDictionary: started and ended
@@ -57,12 +57,12 @@ AddStringToDictionary: alice
 AddStringToDictionary: alice
 AddStringToDictionary: alice
 DelayTimer: Call 2
-DelayTimer: 2 second(s) delay timer started
+DelayTimer: 20 second(s) delay timer started
 AddStringToDictionary: was
 AddStringToDictionary: was
 AddStringToDictionary: was
 DelayTimer: Call 3
-DelayTimer: 3 second(s) delay timer started
+DelayTimer: 30 second(s) delay timer started
 AddStringToDictionary: beginning
 AddStringToDictionary: beginning
 AddStringToDictionary: beginning
@@ -70,7 +70,7 @@ AddStringToDictionary: to
 AddStringToDictionary: to
 AddStringToDictionary: to
 DelayTimer: Call 4
-DelayTimer: 4 second(s) delay timer started
+DelayTimer: 40 second(s) delay timer started
 AddStringToDictionary: get
 AddStringToDictionary: get
 AddStringToDictionary: get
@@ -78,7 +78,7 @@ AddStringToDictionary: very
 AddStringToDictionary: very
 AddStringToDictionary: very
 DelayTimer: Call 5
-DelayTimer: 5 second(s) delay timer started
+DelayTimer: 50 second(s) delay timer started
 AddStringToDictionary: tired
 AddStringToDictionary: tired
 AddStringToDictionary: tired
@@ -86,7 +86,7 @@ AddStringToDictionary: of
 AddStringToDictionary: of
 AddStringToDictionary: of
 DelayTimer: Call 6
-DelayTimer: 6 second(s) delay timer started
+DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: sitting
 AddStringToDictionary: sitting
 AddStringToDictionary: sitting
@@ -97,7 +97,7 @@ AddStringToDictionary: her
 AddStringToDictionary: her
 AddStringToDictionary: her
 DelayTimer: Call 7
-DelayTimer: 7 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: sister
 AddStringToDictionary: sister
 AddStringToDictionary: sister
@@ -105,7 +105,7 @@ AddStringToDictionary: on
 AddStringToDictionary: on
 AddStringToDictionary: on
 DelayTimer: Call 8
-DelayTimer: 1 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer started
 AddStringToDictionary: the
 AddStringToDictionary: the
 AddStringToDictionary: the
@@ -113,7 +113,7 @@ AddStringToDictionary: bank
 AddStringToDictionary: bank
 AddStringToDictionary: bank
 DelayTimer: Call 9
-DelayTimer: 2 second(s) delay timer started
+DelayTimer: 20 second(s) delay timer started
 AddStringToDictionary: and
 AddStringToDictionary: and
 AddStringToDictionary: and
@@ -121,13 +121,13 @@ AddStringToDictionary: of
 AddStringToDictionary: of
 AddStringToDictionary: of
 DelayTimer: Call 10
-DelayTimer: 3 second(s) delay timer started
+DelayTimer: 30 second(s) delay timer started
 AddStringToDictionary: having
 AddStringToDictionary: having
 AddStringToDictionary: having
 DelayTimer: Call 11
-DelayTimer: 4 second(s) delay timer started
-DelayTimer: 1 second(s) delay timer ended
+DelayTimer: 40 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer ended
 CreateOutput: started, call no 1
 CreateOutput: creating output
 of - 6
@@ -149,7 +149,7 @@ very - 3
 was - 3
 CallWithAsync2: ended
 DelayTimer: Call 12
-DelayTimer: 5 second(s) delay timer started
+DelayTimer: 50 second(s) delay timer started
 AddStringToDictionary: nothing
 AddStringToDictionary: nothing
 AddStringToDictionary: nothing
@@ -157,7 +157,7 @@ AddStringToDictionary: to
 AddStringToDictionary: to
 AddStringToDictionary: to
 DelayTimer: Call 13
-DelayTimer: 6 second(s) delay timer started
+DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: do
 AddStringToDictionary: do
 AddStringToDictionary: do
@@ -168,7 +168,7 @@ AddStringToDictionary: or
 AddStringToDictionary: or
 AddStringToDictionary: or
 DelayTimer: Call 14
-DelayTimer: 7 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: twice
 AddStringToDictionary: twice
 AddStringToDictionary: twice
@@ -176,7 +176,7 @@ AddStringToDictionary: she
 AddStringToDictionary: she
 AddStringToDictionary: she
 DelayTimer: Call 15
-DelayTimer: 1 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer started
 AddStringToDictionary: had
 AddStringToDictionary: had
 AddStringToDictionary: had
@@ -184,12 +184,12 @@ AddStringToDictionary: peeped
 AddStringToDictionary: peeped
 AddStringToDictionary: peeped
 DelayTimer: Call 16
-DelayTimer: 2 second(s) delay timer started
+DelayTimer: 20 second(s) delay timer started
 AddStringToDictionary: into
 AddStringToDictionary: into
 AddStringToDictionary: into
 DelayTimer: Call 17
-DelayTimer: 3 second(s) delay timer started
+DelayTimer: 30 second(s) delay timer started
 AddStringToDictionary: the
 AddStringToDictionary: the
 AddStringToDictionary: the
@@ -200,7 +200,7 @@ AddStringToDictionary: her
 AddStringToDictionary: her
 AddStringToDictionary: her
 DelayTimer: Call 18
-DelayTimer: 4 second(s) delay timer started
+DelayTimer: 40 second(s) delay timer started
 AddStringToDictionary: sister
 AddStringToDictionary: sister
 AddStringToDictionary: sister
@@ -208,8 +208,8 @@ AddStringToDictionary: was
 AddStringToDictionary: was
 AddStringToDictionary: was
 DelayTimer: Call 19
-DelayTimer: 5 second(s) delay timer started
-DelayTimer: 1 second(s) delay timer ended
+DelayTimer: 50 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer ended
 CreateOutput: started, call no 2
 CreateOutput: creating output
 her - 6
@@ -241,12 +241,12 @@ twice - 3
 very - 3
 CallWithAsync2: ended
 DelayTimer: Call 20
-DelayTimer: 6 second(s) delay timer started
+DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: reading
 AddStringToDictionary: reading
 AddStringToDictionary: reading
 DelayTimer: Call 21
-DelayTimer: 7 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: but
 AddStringToDictionary: but
 AddStringToDictionary: but
@@ -265,7 +265,7 @@ AddStringToDictionary: pictures
 AddStringToDictionary: or
 AddStringToDictionary: or
 AddStringToDictionary: or
-DelayTimer: 2 second(s) delay timer ended
+DelayTimer: 20 second(s) delay timer ended
 CreateOutput: started, call no 3
 CreateOutput: creating output
 had - 6
@@ -313,7 +313,7 @@ AddStringToDictionary: it
 AddStringToDictionary: and
 AddStringToDictionary: and
 AddStringToDictionary: and
-DelayTimer: 1 second(s) delay timer ended
+DelayTimer: 10 second(s) delay timer ended
 CreateOutput: started, call no 4
 CreateOutput: creating output
 and - 6
@@ -381,7 +381,7 @@ AddStringToDictionary: alice
 AddStringToDictionary: without
 AddStringToDictionary: without
 AddStringToDictionary: without
-DelayTimer: 2 second(s) delay timer ended
+DelayTimer: 20 second(s) delay timer ended
 CreateOutput: started, call no 5
 CreateOutput: creating output
 of - 9
@@ -443,7 +443,7 @@ AddStringToDictionary: she
 AddStringToDictionary: was
 AddStringToDictionary: was
 AddStringToDictionary: was
-DelayTimer: 3 second(s) delay timer ended
+DelayTimer: 30 second(s) delay timer ended
 CreateOutput: started, call no 6
 CreateOutput: creating output
 of - 9
@@ -498,7 +498,7 @@ AddStringToDictionary: in
 AddStringToDictionary: her
 AddStringToDictionary: her
 AddStringToDictionary: her
-DelayTimer: 2 second(s) delay timer ended
+DelayTimer: 20 second(s) delay timer ended
 CreateOutput: started, call no 7
 CreateOutput: creating output
 her - 9
@@ -575,7 +575,7 @@ AddStringToDictionary: the
 AddStringToDictionary: hot
 AddStringToDictionary: hot
 AddStringToDictionary: hot
-DelayTimer: 3 second(s) delay timer ended
+DelayTimer: 30 second(s) delay timer ended
 CreateOutput: started, call no 8
 CreateOutput: creating output
 the - 12
@@ -653,7 +653,7 @@ AddStringToDictionary: and
 AddStringToDictionary: stupid
 AddStringToDictionary: stupid
 AddStringToDictionary: stupid
-DelayTimer: 4 second(s) delay timer ended
+DelayTimer: 40 second(s) delay timer ended
 CreateOutput: started, call no 9
 CreateOutput: creating output
 her - 12
@@ -721,7 +721,7 @@ AddStringToDictionary: the
 AddStringToDictionary: pleasure
 AddStringToDictionary: pleasure
 AddStringToDictionary: pleasure
-DelayTimer: 3 second(s) delay timer ended
+DelayTimer: 30 second(s) delay timer ended
 CreateOutput: started, call no 10
 CreateOutput: creating output
 the - 15
@@ -815,7 +815,7 @@ AddStringToDictionary: trouble
 AddStringToDictionary: of
 AddStringToDictionary: of
 AddStringToDictionary: of
-DelayTimer: 4 second(s) delay timer ended
+DelayTimer: 40 second(s) delay timer ended
 CreateOutput: started, call no 11
 CreateOutput: creating output
 the - 18
@@ -907,7 +907,7 @@ AddStringToDictionary: when
 AddStringToDictionary: suddenly
 AddStringToDictionary: suddenly
 AddStringToDictionary: suddenly
-DelayTimer: 5 second(s) delay timer ended
+DelayTimer: 50 second(s) delay timer ended
 CreateOutput: started, call no 12
 CreateOutput: creating output
 the - 21
@@ -993,7 +993,7 @@ AddStringToDictionary: rabbit
 AddStringToDictionary: with
 AddStringToDictionary: with
 AddStringToDictionary: with
-DelayTimer: 4 second(s) delay timer ended
+DelayTimer: 40 second(s) delay timer ended
 CreateOutput: started, call no 13
 CreateOutput: creating output
 the - 21
@@ -1094,7 +1094,7 @@ Error reading stream: EndOfStreamException.
 RunQuestion1: End of task
 Error reading stream: EndOfStreamException.
 RunQuestion1: End of task
-DelayTimer: 5 second(s) delay timer ended
+DelayTimer: 50 second(s) delay timer ended
 CreateOutput: started, call no 14
 CreateOutput: creating output
 the - 21
@@ -1175,7 +1175,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 6 second(s) delay timer ended
+DelayTimer: 60 second(s) delay timer ended
 CreateOutput: started, call no 15
 CreateOutput: creating output
 the - 21
@@ -1256,7 +1256,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 5 second(s) delay timer ended
+DelayTimer: 50 second(s) delay timer ended
 CreateOutput: started, call no 16
 CreateOutput: creating output
 the - 21
@@ -1337,7 +1337,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 6 second(s) delay timer ended
+DelayTimer: 60 second(s) delay timer ended
 CreateOutput: started, call no 17
 CreateOutput: creating output
 the - 21
@@ -1418,7 +1418,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 7 second(s) delay timer ended
+DelayTimer: 70 second(s) delay timer ended
 CreateOutput: started, call no 18
 CreateOutput: creating output
 the - 21
@@ -1499,7 +1499,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 6 second(s) delay timer ended
+DelayTimer: 60 second(s) delay timer ended
 CreateOutput: started, call no 19
 CreateOutput: creating output
 the - 21
@@ -1580,7 +1580,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 7 second(s) delay timer ended
+DelayTimer: 70 second(s) delay timer ended
 CreateOutput: started, call no 20
 CreateOutput: creating output
 the - 21
@@ -1661,7 +1661,7 @@ without - 3
 worth - 3
 would - 3
 CallWithAsync2: ended
-DelayTimer: 7 second(s) delay timer ended
+DelayTimer: 70 second(s) delay timer ended
 CreateOutput: started, call no 21
 CreateOutput: creating output
 the - 21

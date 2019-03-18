@@ -22,27 +22,27 @@ CallCreateOutputWithAsync: started
 SortDictionary: started and ended
 CallCreateOutputWithAsync: started
 DelayTimer: Call 1
-DelayTimer: 1 second(s) delay timer started
+DelayTimer: 10 second(s) delay timer started
 DelayTimer: Call 2
-DelayTimer: 2 second(s) delay timer started
+DelayTimer: 20 second(s) delay timer started
 DelayTimer: Call 3
-DelayTimer: 3 second(s) delay timer started
+DelayTimer: 30 second(s) delay timer started
 AddStringToDictionary: alice
 AddStringToDictionary: was
 DelayTimer: Call 4
-DelayTimer: 4 second(s) delay timer started
+DelayTimer: 40 second(s) delay timer started
 AddStringToDictionary: beginning
 DelayTimer: Call 5
-DelayTimer: 5 second(s) delay timer started
+DelayTimer: 50 second(s) delay timer started
 AddStringToDictionary: to
 AddStringToDictionary: get
 DelayTimer: Call 6
-DelayTimer: 6 second(s) delay timer started
+DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: very
 AddStringToDictionary: tired
 AddStringToDictionary: of
 DelayTimer: Call 7
-DelayTimer: 7 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: sitting
 AddStringToDictionary: by
 AddStringToDictionary: her
@@ -55,7 +55,7 @@ AddStringToDictionary: of
 AddStringToDictionary: having
 AddStringToDictionary: nothing
 AddStringToDictionary: to
-DelayTimer: 1 second(s) delay timer ended
+DelayTimer: 10 second(s) delay timer ended
 CreateOutput: started, call no 1
 CreateOutput: creating output
 of - 2
@@ -97,7 +97,7 @@ AddStringToDictionary: had
 AddStringToDictionary: no
 AddStringToDictionary: pictures
 AddStringToDictionary: or
-DelayTimer: 2 second(s) delay timer ended
+DelayTimer: 20 second(s) delay timer ended
 CreateOutput: started, call no 2
 CreateOutput: creating output
 had - 2
@@ -149,7 +149,7 @@ AddStringToDictionary: alice
 AddStringToDictionary: without
 AddStringToDictionary: pictures
 AddStringToDictionary: or
-DelayTimer: 3 second(s) delay timer ended
+DelayTimer: 30 second(s) delay timer ended
 CreateOutput: started, call no 3
 CreateOutput: creating output
 of - 3
@@ -215,7 +215,7 @@ AddStringToDictionary: made
 AddStringToDictionary: her
 AddStringToDictionary: feel
 AddStringToDictionary: very
-DelayTimer: 4 second(s) delay timer ended
+DelayTimer: 40 second(s) delay timer ended
 CreateOutput: started, call no 4
 CreateOutput: creating output
 her - 4
@@ -292,7 +292,7 @@ AddStringToDictionary: of
 AddStringToDictionary: getting
 AddStringToDictionary: up
 AddStringToDictionary: and
-DelayTimer: 5 second(s) delay timer ended
+DelayTimer: 50 second(s) delay timer ended
 CreateOutput: started, call no 5
 CreateOutput: creating output
 the - 6
@@ -379,7 +379,7 @@ AddStringToDictionary: by
 AddStringToDictionary: her
 Error reading stream: EndOfStreamException.
 RunQuestion1: End of task
-DelayTimer: 6 second(s) delay timer ended
+DelayTimer: 60 second(s) delay timer ended
 CreateOutput: started, call no 6
 CreateOutput: creating output
 the - 7
@@ -460,7 +460,7 @@ without - 1
 worth - 1
 would - 1
 CallCreateOutputWithAsync: ended
-DelayTimer: 7 second(s) delay timer ended
+DelayTimer: 70 second(s) delay timer ended
 CreateOutput: started, call no 7
 CreateOutput: creating output
 the - 7
