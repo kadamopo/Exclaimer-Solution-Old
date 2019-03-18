@@ -29,10 +29,10 @@ B. DOCUMENTS
 
 3. During the implementation of my solution I created a simple test program (not included here)
     to imitate the three unit tests in StandardTestAsync class. In this program I added 'markers'
-    in order to be able to follow the control flow between the various asynchronous tasks and also
+    in order to be able to follow the flow of control between the various asynchronous tasks and also
     for dubugging purposes.
 
-    I have included the outputs of a couple of runs of my test program that imitate the following
+    I have included the outputs of a couple of runs of my test program, these runs imitate the following
     two unit tests:
 
         TestQuestionTwoSingleAsync
@@ -43,12 +43,13 @@ B. DOCUMENTS
     
     Those two documents clearly demonstrate producing outputs of the required format in 10 second
     intervals. I never experienced any timeouts when running my test program, but my
-    delay mechanism was a simple Thread.Sleep(requiredTime) at the end of the main method.
+    delay mechanism was a simple Thread.Sleep(requiredTime) at the end of the main method of
+    the program.
 
 C. GENERAL NOTES
 
-1. When running my own program I could complete all the tasks within the 12 second timeout.
-    This is not the case for when testing the solution using the provided unit tests. As I
+1. When running my own program I could complete all the tasks within the 2 second timeout.
+    This was not the case for when testing the solution using the provided unit tests. As I
     mentioned above in this case I had to increase the timout value from 120000 to 220000 for
     test: TestQuestionTwoMultipleAsync
     

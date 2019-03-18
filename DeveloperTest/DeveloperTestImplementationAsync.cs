@@ -68,11 +68,13 @@ namespace DeveloperTest
         /// ======
         /// 
         /// An instance of this class (DeveloperTestImplementationAsync) is created elsewhere in the code
-        /// (specifically in the unit test: StandardTestAsync.TestQuestionOneAsync()). When this method is called
+        /// (for example in a unit test such as StandardTestAsync.TestQuestionOneAsync()). This method
+        /// can also be called asynchronously as part of the solution of question 2. When it is called
         /// two objects are passed into it as dependencies using the method dependency injection pattern,
-        /// the first one is a reader object, which is an instance of the SimpleCharacterReader class that
-        /// implements the ICharacterReader interface, and the second one is an output object, which is an
-        /// instance of the Question1TestOutput class that implements the IOutputResult interface.
+        /// the first one is a reader object, for example an instance of the SimpleCharacterReader or the
+        /// SlowCharacterReader class, they both implement the ICharacterReader interface, and the second
+        /// one is an output object, which is an instance of the Question1TestOutput class that implements
+        /// the IOutputResult interface.
         /// 
         /// The purpose of this method is to use these two objects in order to read a character stream,
         /// dynamically process the character stream in order to separate it into English words, then order
@@ -113,8 +115,8 @@ namespace DeveloperTest
         public Task RunQuestionOne(ICharacterReader reader, IOutputResult output)
         {
             // This whole task can run asynchronously. This is useful when we need to run several readers
-            // in parallel and we do not wait for the synchronous completion of each reader before we execute
-            // the next one.
+            // in parallel and we do not want to wait for the synchronous completion of each reader before
+            // starting the next one.
             return Task.Run(async () =>
             {
                 // A string variable that helps us form the next word from the input character stream.
@@ -126,14 +128,14 @@ namespace DeveloperTest
                     {
                         // This is a conditional method (the condition is located within the method
                         // implementation). It is used only by the solution for question 2 in order
-                        // to generate an output every 10 seconds or any other interval.
+                        // to generate an output every 10 seconds or any other specified interval.
                         CreateIntervalOutputs(wordDictionary, output, delayInterval);
 
                         // This is the main loop that reads a stream of characters, one by one,
                         // processes the characters according to the assumptions made above, forms
                         // English words and stores these words to a dictionary collection,
-                        // keeping also track of how often each word appears in the input stream
-                        // (word frequency).
+                        // keeping also track of how often each of these words appear in the input
+                        // stream (word frequency).
                         do
                         {
 
@@ -145,8 +147,8 @@ namespace DeveloperTest
                     {
                         // Normally an error message, like the one below, would be logged in a log file or
                         // log database, by being passed to an appropriate method of a dedicated logger object.
-                        // As this is out of the scope of this exercise, for now I am just imitating the
-                        // error message logging by just displaying the error message to the console.
+                        // As this is out of the scope of this exercise, for now I am just imitating
+                        // logging the error message by just displaying the error message to the console.
                         Console.WriteLine($"Error reading stream: {e.GetType().Name}.");
                     }
                     finally
@@ -160,46 +162,35 @@ namespace DeveloperTest
                     }
 
                     // Sort the dictionary by word frequency and then alphabetically and then
-                    // create the required output.
+                    // create the required output. The delay period is part of the mechanism that
+                    // allows to create an output on specified intervals. The default value is
+                    // zero, meaning an immediate creation of the output.
                     CreateOutputAsync(SortDictionary(wordDictionary), output, defaultDelayPeriod);
 
-                    // Allow some time for the completion of this task.
+                    // Allow some time for the completion of this task before exiting.
                     await DelayTimerAsync(questionOneTimeout);
                 }
             });
         }
 
-
-        /// by using the method ProcessNextChar() where a decision is made whether the character
-        /// is a letter of the English alphabet or not, or an accepted special symbol (hyphen)
-        /// (using the extension method IsLetter()) and accordingly
-        /// either adds the character to the next word if it is indeed a letter or adds the word to a dictionary
-        /// of words if the last read character is a white space, new line character, a comma, etc, i.e. anything
-        /// other than a letter. When a word is added to the dictionary the algorithm makes sure that the
-        /// string that holds the next word is initialised to an empty string in order to be able to hold the
-        /// next word successfully. The algorithm then deals with the EndOfStreamException raised by the reader
-        /// by making sure in the finally part of the try-catch-finally block that the very last word read is not
-        /// lost, but stored in the dictionary in the same way with all the previous words.
-        /// 
-
-
-
         /// <summary>
-        /// This method processes a character and it decides if it could be part of an English word or not.
+        /// This method processes a character and decides if it could be part of an English word or not.
         /// In order to come to that decision it utilises the extension methods defined in CharExtension.cs,
         /// such as IsLetter() and IsAcceptedSymbol().
         /// 
-        /// If a charactes can be accepted then it adds it to the next word until it reaches a character
-        /// that is rejected. At this point it resets the variable that holds the next word and starts again.
+        /// If a character can be accepted then it adds it to the next word. It continuous forming the next
+        /// word until it reaches the first character that is not acceptable, e.g. a white space, a comma,
+        /// a new line character, etc. At this point it resets the variable that holds the next word
+        /// and starts again.
         /// 
-        /// Special provision exists for the double hyphen. The solution provided here for this special case
-        /// is not particularly elegant, but I realised that 'daisy-chain' is a single word very late in the
-        /// development of this solution, and that I have to accept a single hyphen as part of a word, so this
-        /// is a quick fix to an existing algorithm.
+        /// Special provision exists for a double hyphen. The solution provided here for this special case
+        /// is not particularly elegant, but I realised that 'daisy-chain' is a single word, meaning that I
+        /// have to accept a single hyphen as part of a word, very late in the development process
+        /// of this solution, so this is more of a quick fix to an existing algorithm.
         /// </summary>
         /// <param name="nextChar">Character to be processed.</param>
-        /// <param name="nextWord">The word to be formed next by the incoming stream of characters.</param>
-        /// <param name="wordDictionary">The dictionay collection tha holds words and their frequencies of
+        /// <param name="nextWord">The word to be formed next processing the incoming stream of characters.</param>
+        /// <param name="wordDictionary">The dictionay collection that holds words and their frequencies of
         /// appearence in the character stream.</param>
         private void ProcessNextChar(char nextChar, ref string nextWord, IDictionary<string, int> wordDictionary)
         {
@@ -208,7 +199,7 @@ namespace DeveloperTest
             {
                 nextWord += nextChar.ToString().ToLower();
             }
-            // Else, add the word(s) to the dictionary after checking first for the special case of a double hyphen
+            // Else, add the word or words (in the case of a double hyphen)
             // and reset the string that holds the next word.
             else
             {
@@ -234,7 +225,7 @@ namespace DeveloperTest
         }
 
         /// <summary>
-        /// Mechanism for creating an output for given intervals (i.e. 10 seconds) as per requirements.
+        /// Mechanism for creating an output in given intervals (e.g. 10 seconds) as per requirements.
         /// </summary>
         /// <param name="dictionary">The collection that contains the data for the output.</param>
         /// <param name="output">The output where the data will be added.</param>
@@ -290,7 +281,7 @@ namespace DeveloperTest
         /// Sorts a dictionay first by its integer values in descending order and then by its string keys
         /// alphabetically.
         /// </summary>
-        /// <param name="dictionary">Dicrionary to be storted.</param>
+        /// <param name="dictionary">Dicrionary to be sorted.</param>
         /// <returns>An ordered and enumerable collection of key/value pairs, in this case string/int pairs.</returns>
         private IOrderedEnumerable<KeyValuePair<string, int>> SortDictionary(IDictionary<string, int> dictionary)
         {
@@ -299,20 +290,20 @@ namespace DeveloperTest
         }
 
         /// <summary>
-        /// An async Task that allows to await the completion of DelayTimer.
+        /// An async Task that allows to await the completion of a delay timer.
         /// </summary>
         /// <param name="delayPeriod">The delay period necessary for the completion of the timer.</param>
-        /// <returns>When the DelayTimer is completed the task returns.</returns>
+        /// <returns>When the timer is completed the task returns.</returns>
         private async Task DelayTimerAsync(int delayPeriod)
         {
             await DelayTimer(delayPeriod);
         }
 
         /// <summary>
-        /// A task that implements a simple waiting mechanism for a period of time.
+        /// A task that implements a simple waiting mechanism for a specified period of time.
         /// </summary>
-        /// <param name="delayPeriod">The dealy period that the timer will run for.</param>
-        /// <returns>When the required waiting period has expired the task returns.</returns>
+        /// <param name="delayPeriod">The dealy period that the delay will occur for.</param>
+        /// <returns>When the required delay period has expired the task returns.</returns>
         private Task DelayTimer(int delayPeriod)
         {
             return Task.Run(() =>
@@ -321,12 +312,13 @@ namespace DeveloperTest
             });
         }
 
+        /// <summary>
         /// A method that allows to await the creation of an output.
         /// </summary>
         /// <param name="pairs">An ordered and enumerable collection of key/value pairs, in this case string/int pairs,
         /// containing the data that will be used for the creation of the output.</param>
         /// <param name="output">An object of a class that implements the IOutputResult interface.</param>
-        /// <param name="delayPeriod">The period needed to complete before the creation of the output.</param>
+        /// <param name="delayPeriod">The dealy period needed before the creation of the output.</param>
         private async void CreateOutputAsync(IOrderedEnumerable<KeyValuePair<string, int>> pairs, IOutputResult output, int delayPeriod)
         {
             await DelayTimer(delayPeriod);
@@ -357,13 +349,14 @@ namespace DeveloperTest
 
         /// <summary>
         /// The solution to question 2 uses the solution to question 1: The idea here is that we can
-        /// pass more than one readers to this task and just one output. The readers can then run in parallel,
-        /// meaning that they can read streams of characters, process them, form words and
-        /// create outputs, all in parallel. This happens by utiliasing the solution to question 1.
+        /// pass more than one reader objects to this task and just one output object. The readers can then
+        /// run in parallel, meaning that they can read streams of characters, process them, form words and
+        /// create outputs, all in parallel. This happens by utiliasing the solution to question 1 and
+        /// calling the necessary methods in an asynchronous way.
         /// 
-        /// Additionally there is provision in the solution of question 1 for delaying the creation of
-        /// outputs for specified periods of times, i.e. creating outputs in specific intervals, as
-        /// per requirements for the solution to this question.
+        /// Additionally a mechanism has been added to the solution of question 1 for delaying the creation
+        /// of outputs for specified periods of times, i.e. creating outputs in specific intervals, as
+        /// per the requirements for the solution to question 2.
         /// </summary>
         /// <param name="readers">An array of objects of a class that implements the ICharacterReader interface,
         /// which provides a method for reading the next character of a character stream.</param>
@@ -373,7 +366,7 @@ namespace DeveloperTest
         public Task RunQuestionTwo(ICharacterReader[] readers, IOutputResult output)
         {
             // Reset the following variable to false in order to de-activate the mechanism that produces
-            // an output in specified intervals, i.e. 10 seconds.
+            // an output in specified intervals, e.g. 10 seconds.
             wasCallInitiatedInQuestionTwo = true;
 
             return Task.Run(async () =>
