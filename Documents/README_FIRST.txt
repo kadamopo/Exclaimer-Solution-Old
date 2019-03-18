@@ -1,4 +1,5 @@
 A. SOLUTION
+===========
 
 1. The solution to both questions of this assessment is in the top-level folder:
 
@@ -14,7 +15,10 @@ A. SOLUTION
     
 4. I have included my general assumptions and code comments in the above two classes.
 
+--------------------------------------------------------------------------------------------------------
+
 B. DOCUMENTS
+============
 
 1. This repository also contains a few supporting documents in the top-level folder:
 
@@ -45,8 +49,11 @@ B. DOCUMENTS
     intervals. I never experienced any timeouts when running my test program, but my
     delay mechanism was a simple Thread.Sleep(requiredTime) at the end of the main method of
     the program.
+    
+--------------------------------------------------------------------------------------------------------
 
 C. GENERAL NOTES
+================
 
 1. When running my own program I could complete all the tasks within the 2 second timeout.
     This was not the case for when testing the solution using the provided unit tests. As I
