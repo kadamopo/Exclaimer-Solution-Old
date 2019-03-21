@@ -64,14 +64,14 @@ B. DOCUMENTS
 
     Documents
     
-2. The first supporting document is this document, README_FIRST.txt, that provides an
-    overview of known issues, the solution, the supporting documents, and other general
-    notes.
+2. This README_FIRST.txt file is the fitst supporting document. As you can see it provides an
+    overview of any known issues, information about the solution and the supporting documents,
+    and some other general notes.
 
 3. The second supporting document is a screen-shot that shows that all three unit tests
     in the StandardTestAsync class have been completed successfully.
     
-4. The rest of the supporting documents are a sample set of outputs of my test program
+4. The rest of the supporting documents are a small sample of outputs produced by my test program
     for the following scenarios:
     
     a. Output for Question 1 with Single Simple Character Reader - imitates test:
@@ -95,6 +95,6 @@ B. DOCUMENTS
 C. GENERAL NOTES
 ================
     
-3. For the utilisation of the provided unit test I had to install the following Nuget package:
+3. For the utilisation of the provided unit tests I had to install the following Nuget package:
 
     NUnit3TestAdapter
