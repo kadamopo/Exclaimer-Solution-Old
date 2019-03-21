@@ -54,6 +54,8 @@ A. SOLUTION
     KostasTestProgram
     
     Please run this program in order to see the results of my solutions to questions 1 and 2.
+    
+6. It took me quite a bit more than two hours to complete, document and test this solution.
 
 --------------------------------------------------------------------------------------------------------
 
