@@ -1,0 +1,293 @@
+
+Please enter your choise:
+
+1: Test Question One with Simple Character Reader
+2: Test Question One with Slow Character Reader
+3: Test Question Two with Single Slow Character Reader
+4: Test Question One with Multiple Slow Character Readers
+
+q: Exit this program
+
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: best
+AddStringToDictionary: of
+AddStringToDictionary: times
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: worst
+AddStringToDictionary: of
+AddStringToDictionary: times
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: age
+AddStringToDictionary: of
+AddStringToDictionary: wisdom
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: age
+AddStringToDictionary: of
+AddStringToDictionary: foolishness
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: epoch
+AddStringToDictionary: of
+AddStringToDictionary: belief
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: epoch
+AddStringToDictionary: of
+AddStringToDictionary: incredulity
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: season
+AddStringToDictionary: of
+AddStringToDictionary: light
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: season
+AddStringToDictionary: of
+AddStringToDictionary: darkness
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: spring
+AddStringToDictionary: of
+AddStringToDictionary: hope
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: the
+AddStringToDictionary: winter
+AddStringToDictionary: of
+AddStringToDictionary: despair
+AddStringToDictionary: we
+AddStringToDictionary: had
+AddStringToDictionary: everything
+AddStringToDictionary: before
+AddStringToDictionary: us
+AddStringToDictionary: we
+AddStringToDictionary: had
+AddStringToDictionary: nothing
+AddStringToDictionary: before
+AddStringToDictionary: us
+AddStringToDictionary: we
+AddStringToDictionary: were
+AddStringToDictionary: all
+AddStringToDictionary: going
+AddStringToDictionary: direct
+AddStringToDictionary: to
+AddStringToDictionary: heaven
+AddStringToDictionary: we
+AddStringToDictionary: were
+AddStringToDictionary: all
+AddStringToDictionary: going
+AddStringToDictionary: direct
+AddStringToDictionary: the
+AddStringToDictionary: other
+AddStringToDictionary: way
+AddStringToDictionary: in
+AddStringToDictionary: short
+AddStringToDictionary: the
+AddStringToDictionary: period
+AddStringToDictionary: was
+AddStringToDictionary: so
+AddStringToDictionary: far
+AddStringToDictionary: like
+AddStringToDictionary: the
+AddStringToDictionary: present
+AddStringToDictionary: period
+AddStringToDictionary: that
+AddStringToDictionary: some
+AddStringToDictionary: of
+AddStringToDictionary: its
+AddStringToDictionary: noisiest
+AddStringToDictionary: authorities
+AddStringToDictionary: insisted
+AddStringToDictionary: on
+AddStringToDictionary: its
+AddStringToDictionary: being
+AddStringToDictionary: received
+AddStringToDictionary: for
+AddStringToDictionary: good
+AddStringToDictionary: or
+AddStringToDictionary: for
+AddStringToDictionary: evil
+AddStringToDictionary: in
+AddStringToDictionary: the
+AddStringToDictionary: superlative
+AddStringToDictionary: degree
+AddStringToDictionary: of
+AddStringToDictionary: comparison
+AddStringToDictionary: only
+AddStringToDictionary: there
+AddStringToDictionary: were
+AddStringToDictionary: a
+AddStringToDictionary: king
+AddStringToDictionary: with
+AddStringToDictionary: a
+AddStringToDictionary: large
+AddStringToDictionary: jaw
+AddStringToDictionary: and
+AddStringToDictionary: a
+AddStringToDictionary: queen
+AddStringToDictionary: with
+AddStringToDictionary: a
+AddStringToDictionary: plain
+AddStringToDictionary: face
+AddStringToDictionary: on
+AddStringToDictionary: the
+AddStringToDictionary: throne
+AddStringToDictionary: of
+AddStringToDictionary: england
+AddStringToDictionary: there
+AddStringToDictionary: were
+AddStringToDictionary: a
+AddStringToDictionary: king
+AddStringToDictionary: with
+AddStringToDictionary: a
+AddStringToDictionary: large
+AddStringToDictionary: jaw
+AddStringToDictionary: and
+AddStringToDictionary: a
+AddStringToDictionary: queen
+AddStringToDictionary: with
+AddStringToDictionary: a
+AddStringToDictionary: fair
+AddStringToDictionary: face
+AddStringToDictionary: on
+AddStringToDictionary: the
+AddStringToDictionary: throne
+AddStringToDictionary: of
+AddStringToDictionary: france
+AddStringToDictionary: in
+AddStringToDictionary: both
+AddStringToDictionary: countries
+AddStringToDictionary: it
+AddStringToDictionary: was
+AddStringToDictionary: clearer
+AddStringToDictionary: than
+AddStringToDictionary: crystal
+AddStringToDictionary: to
+AddStringToDictionary: the
+AddStringToDictionary: lords
+AddStringToDictionary: of
+AddStringToDictionary: the
+AddStringToDictionary: state
+AddStringToDictionary: preserves
+AddStringToDictionary: of
+AddStringToDictionary: loaves
+AddStringToDictionary: and
+AddStringToDictionary: fishes
+AddStringToDictionary: that
+AddStringToDictionary: things
+AddStringToDictionary: in
+AddStringToDictionary: general
+AddStringToDictionary: were
+AddStringToDictionary: settled
+AddStringToDictionary: for
+Error reading stream: EndOfStreamException.
+AddStringToDictionary: ever
+DelayTimer: 0 milliseconds delay timer started
+DelayTimer: 0 second(s) delay timer ended
+DelayTimer: 500 milliseconds delay timer started
+Output:
+--------------------
+the - 18
+of - 16
+was - 12
+it - 11
+a - 8
+were - 5
+in - 4
+we - 4
+with - 4
+and - 3
+for - 3
+on - 3
+age - 2
+all - 2
+before - 2
+direct - 2
+epoch - 2
+face - 2
+going - 2
+had - 2
+its - 2
+jaw - 2
+king - 2
+large - 2
+period - 2
+queen - 2
+season - 2
+that - 2
+there - 2
+throne - 2
+times - 2
+to - 2
+us - 2
+authorities - 1
+being - 1
+belief - 1
+best - 1
+both - 1
+clearer - 1
+comparison - 1
+countries - 1
+crystal - 1
+darkness - 1
+degree - 1
+despair - 1
+england - 1
+ever - 1
+everything - 1
+evil - 1
+fair - 1
+far - 1
+fishes - 1
+foolishness - 1
+france - 1
+general - 1
+good - 1
+heaven - 1
+hope - 1
+incredulity - 1
+insisted - 1
+light - 1
+like - 1
+loaves - 1
+lords - 1
+noisiest - 1
+nothing - 1
+only - 1
+or - 1
+other - 1
+plain - 1
+present - 1
+preserves - 1
+received - 1
+settled - 1
+short - 1
+so - 1
+some - 1
+spring - 1
+state - 1
+superlative - 1
+than - 1
+things - 1
+way - 1
+winter - 1
+wisdom - 1
+worst - 1
+--------------------
+DelayTimer: 0 second(s) delay timer ended
+
+Press a key to go back to menu...
+

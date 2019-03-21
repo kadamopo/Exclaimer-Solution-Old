@@ -1,0 +1,209 @@
+
+Please enter your choise:
+
+1: Test Question One with Simple Character Reader
+2: Test Question One with Slow Character Reader
+3: Test Question Two with Single Slow Character Reader
+4: Test Question One with Multiple Slow Character Readers
+
+q: Exit this program
+
+AddStringToDictionary: alice
+AddStringToDictionary: was
+AddStringToDictionary: beginning
+AddStringToDictionary: to
+AddStringToDictionary: get
+AddStringToDictionary: very
+AddStringToDictionary: tired
+AddStringToDictionary: of
+AddStringToDictionary: sitting
+AddStringToDictionary: by
+AddStringToDictionary: her
+AddStringToDictionary: sister
+AddStringToDictionary: on
+AddStringToDictionary: the
+AddStringToDictionary: bank
+AddStringToDictionary: and
+AddStringToDictionary: of
+AddStringToDictionary: having
+AddStringToDictionary: nothing
+AddStringToDictionary: to
+AddStringToDictionary: do
+AddStringToDictionary: once
+AddStringToDictionary: or
+AddStringToDictionary: twice
+AddStringToDictionary: she
+AddStringToDictionary: had
+AddStringToDictionary: peeped
+AddStringToDictionary: into
+AddStringToDictionary: the
+AddStringToDictionary: book
+AddStringToDictionary: her
+AddStringToDictionary: sister
+AddStringToDictionary: was
+AddStringToDictionary: reading
+AddStringToDictionary: but
+AddStringToDictionary: it
+AddStringToDictionary: had
+AddStringToDictionary: no
+AddStringToDictionary: pictures
+AddStringToDictionary: or
+AddStringToDictionary: conversations
+AddStringToDictionary: in
+AddStringToDictionary: it
+AddStringToDictionary: and
+AddStringToDictionary: what
+AddStringToDictionary: is
+AddStringToDictionary: the
+AddStringToDictionary: use
+AddStringToDictionary: of
+AddStringToDictionary: a
+AddStringToDictionary: book
+AddStringToDictionary: thought
+AddStringToDictionary: alice
+AddStringToDictionary: without
+AddStringToDictionary: pictures
+AddStringToDictionary: or
+AddStringToDictionary: conversation
+AddStringToDictionary: so
+AddStringToDictionary: she
+AddStringToDictionary: was
+AddStringToDictionary: considering
+AddStringToDictionary: in
+AddStringToDictionary: her
+AddStringToDictionary: own
+AddStringToDictionary: mind
+AddStringToDictionary: as
+AddStringToDictionary: well
+AddStringToDictionary: as
+AddStringToDictionary: she
+AddStringToDictionary: could
+AddStringToDictionary: for
+AddStringToDictionary: the
+AddStringToDictionary: hot
+AddStringToDictionary: day
+AddStringToDictionary: made
+AddStringToDictionary: her
+AddStringToDictionary: feel
+AddStringToDictionary: very
+AddStringToDictionary: sleepy
+AddStringToDictionary: and
+AddStringToDictionary: stupid
+AddStringToDictionary: whether
+AddStringToDictionary: the
+AddStringToDictionary: pleasure
+AddStringToDictionary: of
+AddStringToDictionary: making
+AddStringToDictionary: a
+AddStringToDictionary: daisy-chain
+AddStringToDictionary: would
+AddStringToDictionary: be
+AddStringToDictionary: worth
+AddStringToDictionary: the
+AddStringToDictionary: trouble
+AddStringToDictionary: of
+AddStringToDictionary: getting
+AddStringToDictionary: up
+AddStringToDictionary: and
+AddStringToDictionary: picking
+AddStringToDictionary: the
+AddStringToDictionary: daisies
+AddStringToDictionary: when
+AddStringToDictionary: suddenly
+AddStringToDictionary: a
+AddStringToDictionary: white
+AddStringToDictionary: rabbit
+AddStringToDictionary: with
+AddStringToDictionary: pink
+AddStringToDictionary: eyes
+AddStringToDictionary: ran
+AddStringToDictionary: close
+AddStringToDictionary: by
+AddStringToDictionary: her
+Error reading stream: EndOfStreamException.
+DelayTimer: 0 milliseconds delay timer started
+DelayTimer: 0 second(s) delay timer ended
+DelayTimer: 500 milliseconds delay timer started
+Output:
+--------------------
+the - 7
+her - 5
+of - 5
+and - 4
+a - 3
+or - 3
+she - 3
+was - 3
+alice - 2
+as - 2
+book - 2
+by - 2
+had - 2
+in - 2
+it - 2
+pictures - 2
+sister - 2
+to - 2
+very - 2
+bank - 1
+be - 1
+beginning - 1
+but - 1
+close - 1
+considering - 1
+conversation - 1
+conversations - 1
+could - 1
+daisies - 1
+daisy-chain - 1
+day - 1
+do - 1
+eyes - 1
+feel - 1
+for - 1
+get - 1
+getting - 1
+having - 1
+hot - 1
+into - 1
+is - 1
+made - 1
+making - 1
+mind - 1
+no - 1
+nothing - 1
+on - 1
+once - 1
+own - 1
+peeped - 1
+picking - 1
+pink - 1
+pleasure - 1
+rabbit - 1
+ran - 1
+reading - 1
+sitting - 1
+sleepy - 1
+so - 1
+stupid - 1
+suddenly - 1
+thought - 1
+tired - 1
+trouble - 1
+twice - 1
+up - 1
+use - 1
+well - 1
+what - 1
+when - 1
+whether - 1
+white - 1
+with - 1
+without - 1
+worth - 1
+would - 1
+--------------------
+DelayTimer: 0 second(s) delay timer ended
+
+Press a key to go back to menu...
+

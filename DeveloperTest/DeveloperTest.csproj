@@ -77,6 +77,10 @@
       <Project>{EFE21566-4341-450E-91BE-1F6B55FC516F}</Project>
       <Name>DeveloperTestSupport</Name>
     </ProjectReference>
+    <ProjectReference Include="KostasGlobalProperties\KostasGlobalProperties.csproj">
+      <Project>{56be2982-4994-45b6-8bef-4f079535dc7a}</Project>
+      <Name>KostasGlobalProperties</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

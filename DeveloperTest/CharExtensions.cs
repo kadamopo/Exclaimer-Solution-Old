@@ -37,7 +37,7 @@ namespace DeveloperTest
         /// 
         /// Example:
         /// 
-        /// 'daisy-chain' is considered to be a single word thatn two words, i.e. daisy and chain.
+        /// 'daisy-chain' is considered to be a single word, not two words, i.e. not daisy and chain.
         /// </summary>
         public static char[] AcceptedSymbols { get; } = new char[] { '-' };
 

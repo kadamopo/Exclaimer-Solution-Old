@@ -1,49 +1,30 @@
-Main: started
-OneReaderCallWithAsync: started
-TestQuestionTwoAsyncWith1Reader: started
-RunQuestionTwo : started
-Main: called OneReaderCallWithAsync()
-RunQuestion1: started, call no 1
-RunQuestionTwo : ended
-TestQuestionTwoAsyncWith1Reader: ended
-OneReaderCallWithAsync: ended
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-SortDictionary: started and ended
-CallCreateOutputWithAsync: started
-DelayTimer: Call 1
+
+Please enter your choise:
+
+1: Test Question One with Simple Character Reader
+2: Test Question One with Slow Character Reader
+3: Test Question Two with Single Slow Character Reader
+4: Test Question One with Multiple Slow Character Readers
+
+q: Exit this program
+
+DelayTimer: 70 second(s) delay timer started
 DelayTimer: 10 second(s) delay timer started
-DelayTimer: Call 2
-DelayTimer: 20 second(s) delay timer started
-DelayTimer: Call 3
-DelayTimer: 30 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: alice
+DelayTimer: 20 second(s) delay timer started
 AddStringToDictionary: was
-DelayTimer: Call 4
-DelayTimer: 40 second(s) delay timer started
 AddStringToDictionary: beginning
-DelayTimer: Call 5
-DelayTimer: 50 second(s) delay timer started
+DelayTimer: 30 second(s) delay timer started
 AddStringToDictionary: to
 AddStringToDictionary: get
-DelayTimer: Call 6
-DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: very
+DelayTimer: 40 second(s) delay timer started
 AddStringToDictionary: tired
+DelayTimer: 50 second(s) delay timer started
 AddStringToDictionary: of
-DelayTimer: Call 7
-DelayTimer: 70 second(s) delay timer started
 AddStringToDictionary: sitting
+DelayTimer: 60 second(s) delay timer started
 AddStringToDictionary: by
 AddStringToDictionary: her
 AddStringToDictionary: sister
@@ -53,13 +34,10 @@ AddStringToDictionary: bank
 AddStringToDictionary: and
 AddStringToDictionary: of
 AddStringToDictionary: having
-AddStringToDictionary: nothing
-AddStringToDictionary: to
 DelayTimer: 10 second(s) delay timer ended
-CreateOutput: started, call no 1
-CreateOutput: creating output
+Output:
+--------------------
 of - 2
-to - 2
 alice - 1
 and - 1
 bank - 1
@@ -68,15 +46,17 @@ by - 1
 get - 1
 having - 1
 her - 1
-nothing - 1
 on - 1
 sister - 1
 sitting - 1
 the - 1
 tired - 1
+to - 1
 very - 1
 was - 1
-CallCreateOutputWithAsync: ended
+--------------------
+AddStringToDictionary: nothing
+AddStringToDictionary: to
 AddStringToDictionary: do
 AddStringToDictionary: once
 AddStringToDictionary: or
@@ -98,8 +78,8 @@ AddStringToDictionary: no
 AddStringToDictionary: pictures
 AddStringToDictionary: or
 DelayTimer: 20 second(s) delay timer ended
-CreateOutput: started, call no 2
-CreateOutput: creating output
+Output:
+--------------------
 had - 2
 her - 2
 of - 2
@@ -132,7 +112,7 @@ sitting - 1
 tired - 1
 twice - 1
 very - 1
-CallCreateOutputWithAsync: ended
+--------------------
 AddStringToDictionary: conversations
 AddStringToDictionary: in
 AddStringToDictionary: it
@@ -149,9 +129,10 @@ AddStringToDictionary: alice
 AddStringToDictionary: without
 AddStringToDictionary: pictures
 AddStringToDictionary: or
+AddStringToDictionary: conversation
 DelayTimer: 30 second(s) delay timer ended
-CreateOutput: started, call no 3
-CreateOutput: creating output
+Output:
+--------------------
 of - 3
 or - 3
 the - 3
@@ -170,6 +151,7 @@ bank - 1
 beginning - 1
 but - 1
 by - 1
+conversation - 1
 conversations - 1
 do - 1
 get - 1
@@ -192,8 +174,7 @@ use - 1
 very - 1
 what - 1
 without - 1
-CallCreateOutputWithAsync: ended
-AddStringToDictionary: conversation
+--------------------
 AddStringToDictionary: so
 AddStringToDictionary: she
 AddStringToDictionary: was
@@ -215,17 +196,19 @@ AddStringToDictionary: made
 AddStringToDictionary: her
 AddStringToDictionary: feel
 AddStringToDictionary: very
+AddStringToDictionary: sleepy
+AddStringToDictionary: and
 DelayTimer: 40 second(s) delay timer ended
-CreateOutput: started, call no 4
-CreateOutput: creating output
+Output:
+--------------------
 her - 4
 the - 4
+and - 3
 of - 3
 or - 3
 she - 3
 was - 3
 alice - 2
-and - 2
 as - 2
 book - 2
 had - 2
@@ -263,6 +246,7 @@ own - 1
 peeped - 1
 reading - 1
 sitting - 1
+sleepy - 1
 so - 1
 thought - 1
 tired - 1
@@ -271,9 +255,7 @@ use - 1
 well - 1
 what - 1
 without - 1
-CallCreateOutputWithAsync: ended
-AddStringToDictionary: sleepy
-AddStringToDictionary: and
+--------------------
 AddStringToDictionary: stupid
 AddStringToDictionary: whether
 AddStringToDictionary: the
@@ -281,8 +263,7 @@ AddStringToDictionary: pleasure
 AddStringToDictionary: of
 AddStringToDictionary: making
 AddStringToDictionary: a
-AddStringToDictionary: daisy
-AddStringToDictionary: chain
+AddStringToDictionary: daisy-chain
 AddStringToDictionary: would
 AddStringToDictionary: be
 AddStringToDictionary: worth
@@ -292,9 +273,10 @@ AddStringToDictionary: of
 AddStringToDictionary: getting
 AddStringToDictionary: up
 AddStringToDictionary: and
+AddStringToDictionary: picking
 DelayTimer: 50 second(s) delay timer ended
-CreateOutput: started, call no 5
-CreateOutput: creating output
+Output:
+--------------------
 the - 6
 of - 5
 and - 4
@@ -318,12 +300,11 @@ be - 1
 beginning - 1
 but - 1
 by - 1
-chain - 1
 considering - 1
 conversation - 1
 conversations - 1
 could - 1
-daisy - 1
+daisy-chain - 1
 day - 1
 do - 1
 feel - 1
@@ -342,7 +323,9 @@ nothing - 1
 on - 1
 once - 1
 own - 1
+AddStringToDictionary: the
 peeped - 1
+picking - 1
 pleasure - 1
 reading - 1
 sitting - 1
@@ -361,9 +344,7 @@ whether - 1
 without - 1
 worth - 1
 would - 1
-CallCreateOutputWithAsync: ended
-AddStringToDictionary: picking
-AddStringToDictionary: the
+--------------------
 AddStringToDictionary: daisies
 AddStringToDictionary: when
 AddStringToDictionary: suddenly
@@ -378,10 +359,11 @@ AddStringToDictionary: close
 AddStringToDictionary: by
 AddStringToDictionary: her
 Error reading stream: EndOfStreamException.
-RunQuestion1: End of task
+DelayTimer: 500 milliseconds delay timer started
+DelayTimer: 0 second(s) delay timer ended
 DelayTimer: 60 second(s) delay timer ended
-CreateOutput: started, call no 6
-CreateOutput: creating output
+Output:
+--------------------
 the - 7
 her - 5
 of - 5
@@ -405,14 +387,13 @@ bank - 1
 be - 1
 beginning - 1
 but - 1
-chain - 1
 close - 1
 considering - 1
 conversation - 1
 conversations - 1
 could - 1
 daisies - 1
-daisy - 1
+daisy-chain - 1
 day - 1
 do - 1
 eyes - 1
@@ -459,10 +440,11 @@ with - 1
 without - 1
 worth - 1
 would - 1
-CallCreateOutputWithAsync: ended
+--------------------
 DelayTimer: 70 second(s) delay timer ended
-CreateOutput: started, call no 7
-CreateOutput: creating output
+DelayTimer: 70 second(s) delay timer ended
+Output:
+--------------------
 the - 7
 her - 5
 of - 5
@@ -486,14 +468,13 @@ bank - 1
 be - 1
 beginning - 1
 but - 1
-chain - 1
 close - 1
 considering - 1
 conversation - 1
 conversations - 1
 could - 1
 daisies - 1
-daisy - 1
+daisy-chain - 1
 day - 1
 do - 1
 eyes - 1
@@ -540,5 +521,7 @@ with - 1
 without - 1
 worth - 1
 would - 1
-CallCreateOutputWithAsync: ended
-Main: ended
+--------------------
+
+Press a key to go back to menu...
+

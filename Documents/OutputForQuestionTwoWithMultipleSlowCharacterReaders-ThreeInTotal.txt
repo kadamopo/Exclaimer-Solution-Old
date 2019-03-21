@@ -1,0 +1,774 @@
+
+Please enter your choise:
+
+1: Test Question One with Simple Character Reader
+2: Test Question One with Slow Character Reader
+3: Test Question Two with Single Slow Character Reader
+4: Test Question One with Multiple Slow Character Readers
+
+q: Exit this program
+
+DelayTimer: 70 second(s) delay timer started
+DelayTimer: 70 second(s) delay timer started
+AddStringToDictionary: alice
+AddStringToDictionary: alice
+AddStringToDictionary: was
+AddStringToDictionary: was
+AddStringToDictionary: alice
+DelayTimer: 10 second(s) delay timer started
+AddStringToDictionary: beginning
+AddStringToDictionary: beginning
+AddStringToDictionary: was
+AddStringToDictionary: to
+AddStringToDictionary: to
+AddStringToDictionary: get
+AddStringToDictionary: get
+DelayTimer: 20 second(s) delay timer started
+AddStringToDictionary: beginning
+AddStringToDictionary: very
+AddStringToDictionary: very
+AddStringToDictionary: to
+AddStringToDictionary: get
+DelayTimer: 30 second(s) delay timer started
+AddStringToDictionary: tired
+AddStringToDictionary: tired
+AddStringToDictionary: of
+AddStringToDictionary: of
+AddStringToDictionary: very
+DelayTimer: 40 second(s) delay timer started
+AddStringToDictionary: tired
+AddStringToDictionary: sitting
+AddStringToDictionary: sitting
+AddStringToDictionary: of
+AddStringToDictionary: by
+AddStringToDictionary: by
+AddStringToDictionary: her
+AddStringToDictionary: her
+DelayTimer: 50 second(s) delay timer started
+AddStringToDictionary: sitting
+AddStringToDictionary: by
+AddStringToDictionary: sister
+AddStringToDictionary: sister
+AddStringToDictionary: her
+AddStringToDictionary: on
+AddStringToDictionary: on
+DelayTimer: 60 second(s) delay timer started
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: sister
+AddStringToDictionary: bank
+AddStringToDictionary: bank
+AddStringToDictionary: on
+AddStringToDictionary: the
+AddStringToDictionary: and
+AddStringToDictionary: and
+AddStringToDictionary: of
+AddStringToDictionary: of
+AddStringToDictionary: bank
+AddStringToDictionary: having
+AddStringToDictionary: having
+AddStringToDictionary: and
+AddStringToDictionary: of
+AddStringToDictionary: nothing
+AddStringToDictionary: nothing
+AddStringToDictionary: having
+AddStringToDictionary: to
+AddStringToDictionary: to
+AddStringToDictionary: do
+AddStringToDictionary: do
+AddStringToDictionary: nothing
+AddStringToDictionary: once
+AddStringToDictionary: once
+AddStringToDictionary: to
+AddStringToDictionary: or
+AddStringToDictionary: or
+AddStringToDictionary: do
+DelayTimer: 10 second(s) delay timer ended
+Output:
+--------------------
+of - 6
+to - 6
+alice - 3
+and - 3
+bank - 3
+beginning - 3
+by - 3
+do - 3
+get - 3
+having - 3
+her - 3
+nothing - 3
+on - 3
+sister - 3
+sitting - 3
+the - 3
+tired - 3
+very - 3
+was - 3
+once - 2
+or - 2
+--------------------
+AddStringToDictionary: twice
+AddStringToDictionary: twice
+AddStringToDictionary: once
+AddStringToDictionary: or
+AddStringToDictionary: she
+AddStringToDictionary: she
+AddStringToDictionary: had
+AddStringToDictionary: had
+AddStringToDictionary: twice
+AddStringToDictionary: peeped
+AddStringToDictionary: peeped
+AddStringToDictionary: she
+AddStringToDictionary: into
+AddStringToDictionary: into
+AddStringToDictionary: had
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: peeped
+AddStringToDictionary: book
+AddStringToDictionary: book
+AddStringToDictionary: into
+AddStringToDictionary: the
+AddStringToDictionary: her
+AddStringToDictionary: her
+AddStringToDictionary: book
+AddStringToDictionary: sister
+AddStringToDictionary: sister
+AddStringToDictionary: was
+AddStringToDictionary: was
+AddStringToDictionary: her
+AddStringToDictionary: sister
+AddStringToDictionary: reading
+AddStringToDictionary: reading
+AddStringToDictionary: was
+AddStringToDictionary: but
+AddStringToDictionary: but
+AddStringToDictionary: it
+AddStringToDictionary: it
+AddStringToDictionary: reading
+AddStringToDictionary: had
+AddStringToDictionary: had
+AddStringToDictionary: no
+AddStringToDictionary: no
+AddStringToDictionary: but
+AddStringToDictionary: it
+AddStringToDictionary: had
+AddStringToDictionary: no
+AddStringToDictionary: pictures
+AddStringToDictionary: pictures
+AddStringToDictionary: or
+AddStringToDictionary: or
+AddStringToDictionary: pictures
+AddStringToDictionary: or
+AddStringToDictionary: conversations
+AddStringToDictionary: conversations
+AddStringToDictionary: in
+AddStringToDictionary: in
+AddStringToDictionary: it
+AddStringToDictionary: it
+AddStringToDictionary: conversations
+AddStringToDictionary: and
+AddStringToDictionary: and
+AddStringToDictionary: in
+AddStringToDictionary: what
+AddStringToDictionary: what
+AddStringToDictionary: it
+DelayTimer: 20 second(s) delay timer ended
+Output:
+--------------------
+had - 6
+her - 6
+it - 6
+of - 6
+or - 6
+sister - 6
+the - 6
+to - 6
+was - 6
+and - 5
+alice - 3
+bank - 3
+beginning - 3
+book - 3
+but - 3
+by - 3
+conversations - 3
+do - 3
+get - 3
+having - 3
+in - 3
+into - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+peeped - 3
+pictures - 3
+reading - 3
+she - 3
+sitting - 3
+tired - 3
+twice - 3
+very - 3
+what - 2
+--------------------
+AddStringToDictionary: is
+AddStringToDictionary: is
+AddStringToDictionary: and
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: what
+AddStringToDictionary: use
+AddStringToDictionary: use
+AddStringToDictionary: is
+AddStringToDictionary: of
+AddStringToDictionary: of
+AddStringToDictionary: the
+AddStringToDictionary: a
+AddStringToDictionary: a
+AddStringToDictionary: book
+AddStringToDictionary: book
+AddStringToDictionary: use
+AddStringToDictionary: of
+AddStringToDictionary: a
+AddStringToDictionary: book
+AddStringToDictionary: thought
+AddStringToDictionary: thought
+AddStringToDictionary: alice
+AddStringToDictionary: alice
+AddStringToDictionary: thought
+AddStringToDictionary: without
+AddStringToDictionary: without
+AddStringToDictionary: alice
+AddStringToDictionary: pictures
+AddStringToDictionary: pictures
+AddStringToDictionary: without
+AddStringToDictionary: or
+AddStringToDictionary: or
+AddStringToDictionary: pictures
+AddStringToDictionary: conversation
+AddStringToDictionary: or
+AddStringToDictionary: conversation
+AddStringToDictionary: so
+AddStringToDictionary: so
+AddStringToDictionary: conversation
+AddStringToDictionary: she
+AddStringToDictionary: she
+AddStringToDictionary: was
+AddStringToDictionary: was
+AddStringToDictionary: so
+AddStringToDictionary: she
+AddStringToDictionary: was
+AddStringToDictionary: considering
+AddStringToDictionary: considering
+AddStringToDictionary: in
+AddStringToDictionary: in
+AddStringToDictionary: her
+AddStringToDictionary: her
+DelayTimer: 30 second(s) delay timer ended
+Output:
+--------------------
+of - 9
+or - 9
+the - 9
+was - 9
+her - 8
+alice - 6
+and - 6
+book - 6
+had - 6
+it - 6
+pictures - 6
+she - 6
+sister - 6
+to - 6
+in - 5
+a - 3
+bank - 3
+beginning - 3
+but - 3
+by - 3
+conversation - 3
+conversations - 3
+do - 3
+get - 3
+having - 3
+into - 3
+is - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+peeped - 3
+reading - 3
+sitting - 3
+so - 3
+thought - 3
+tired - 3
+twice - 3
+use - 3
+very - 3
+what - 3
+without - 3
+considering - 2
+--------------------
+AddStringToDictionary: own
+AddStringToDictionary: own
+AddStringToDictionary: considering
+AddStringToDictionary: in
+AddStringToDictionary: her
+AddStringToDictionary: mind
+AddStringToDictionary: mind
+AddStringToDictionary: own
+AddStringToDictionary: as
+AddStringToDictionary: as
+AddStringToDictionary: well
+AddStringToDictionary: well
+AddStringToDictionary: as
+AddStringToDictionary: as
+AddStringToDictionary: mind
+AddStringToDictionary: she
+AddStringToDictionary: she
+AddStringToDictionary: as
+AddStringToDictionary: well
+AddStringToDictionary: could
+AddStringToDictionary: could
+AddStringToDictionary: as
+AddStringToDictionary: she
+AddStringToDictionary: for
+AddStringToDictionary: for
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: could
+AddStringToDictionary: hot
+AddStringToDictionary: hot
+AddStringToDictionary: day
+AddStringToDictionary: day
+AddStringToDictionary: for
+AddStringToDictionary: made
+AddStringToDictionary: made
+AddStringToDictionary: the
+AddStringToDictionary: her
+AddStringToDictionary: her
+AddStringToDictionary: hot
+AddStringToDictionary: day
+AddStringToDictionary: feel
+AddStringToDictionary: feel
+AddStringToDictionary: made
+AddStringToDictionary: her
+AddStringToDictionary: very
+AddStringToDictionary: very
+AddStringToDictionary: feel
+AddStringToDictionary: sleepy
+AddStringToDictionary: sleepy
+AddStringToDictionary: very
+AddStringToDictionary: and
+AddStringToDictionary: and
+AddStringToDictionary: stupid
+AddStringToDictionary: stupid
+AddStringToDictionary: sleepy
+AddStringToDictionary: and
+AddStringToDictionary: whether
+AddStringToDictionary: whether
+AddStringToDictionary: stupid
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: whether
+AddStringToDictionary: pleasure
+AddStringToDictionary: pleasure
+AddStringToDictionary: of
+AddStringToDictionary: of
+AddStringToDictionary: the
+AddStringToDictionary: making
+AddStringToDictionary: making
+AddStringToDictionary: pleasure
+AddStringToDictionary: a
+AddStringToDictionary: a
+AddStringToDictionary: of
+DelayTimer: 40 second(s) delay timer ended
+Output:
+--------------------
+the - 15
+her - 12
+of - 12
+and - 9
+or - 9
+she - 9
+was - 9
+alice - 6
+as - 6
+book - 6
+had - 6
+in - 6
+it - 6
+pictures - 6
+sister - 6
+to - 6
+very - 6
+a - 5
+bank - 3
+beginning - 3
+but - 3
+by - 3
+considering - 3
+conversation - 3
+conversations - 3
+could - 3
+day - 3
+do - 3
+feel - 3
+for - 3
+get - 3
+having - 3
+hot - 3
+into - 3
+is - 3
+made - 3
+mind - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+own - 3
+peeped - 3
+pleasure - 3
+reading - 3
+sitting - 3
+sleepy - 3
+so - 3
+stupid - 3
+thought - 3
+tired - 3
+twice - 3
+use - 3
+well - 3
+what - 3
+whether - 3
+without - 3
+making - 2
+--------------------
+AddStringToDictionary: making
+AddStringToDictionary: a
+AddStringToDictionary: daisy-chain
+AddStringToDictionary: daisy-chain
+AddStringToDictionary: would
+AddStringToDictionary: would
+AddStringToDictionary: be
+AddStringToDictionary: be
+AddStringToDictionary: daisy-chain
+AddStringToDictionary: worth
+AddStringToDictionary: worth
+AddStringToDictionary: would
+AddStringToDictionary: be
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: worth
+AddStringToDictionary: the
+AddStringToDictionary: trouble
+AddStringToDictionary: trouble
+AddStringToDictionary: of
+AddStringToDictionary: of
+AddStringToDictionary: trouble
+AddStringToDictionary: getting
+AddStringToDictionary: getting
+AddStringToDictionary: of
+AddStringToDictionary: up
+AddStringToDictionary: up
+AddStringToDictionary: and
+AddStringToDictionary: and
+AddStringToDictionary: getting
+AddStringToDictionary: up
+AddStringToDictionary: picking
+AddStringToDictionary: picking
+AddStringToDictionary: and
+AddStringToDictionary: the
+AddStringToDictionary: the
+AddStringToDictionary: picking
+AddStringToDictionary: daisies
+AddStringToDictionary: daisies
+AddStringToDictionary: the
+AddStringToDictionary: when
+AddStringToDictionary: when
+AddStringToDictionary: daisies
+AddStringToDictionary: suddenly
+AddStringToDictionary: suddenly
+AddStringToDictionary: when
+AddStringToDictionary: a
+AddStringToDictionary: a
+AddStringToDictionary: white
+AddStringToDictionary: white
+AddStringToDictionary: suddenly
+AddStringToDictionary: a
+DelayTimer: 50 second(s) delay timer ended
+Output:
+--------------------
+the - 21
+of - 15
+and - 12
+her - 12
+a - 9
+or - 9
+she - 9
+was - 9
+alice - 6
+as - 6
+book - 6
+had - 6
+in - 6
+it - 6
+pictures - 6
+sister - 6
+to - 6
+very - 6
+bank - 3
+be - 3
+beginning - 3
+but - 3
+by - 3
+considering - 3
+conversation - 3
+conversations - 3
+could - 3
+daisies - 3
+daisy-chain - 3
+day - 3
+do - 3
+feel - 3
+for - 3
+get - 3
+getting - 3
+having - 3
+hot - 3
+AddStringToDictionary: rabbit
+into - 3
+is - 3
+made - 3
+making - 3
+mind - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+AddStringToDictionary: rabbit
+own - 3
+peeped - 3
+picking - 3
+pleasure - 3
+reading - 3
+sitting - 3
+sleepy - 3
+so - 3
+stupid - 3
+suddenly - 3
+thought - 3
+tired - 3
+trouble - 3
+twice - 3
+up - 3
+use - 3
+well - 3
+what - 3
+when - 3
+whether - 3
+without - 3
+worth - 3
+would - 3
+white - 2
+--------------------
+AddStringToDictionary: white
+AddStringToDictionary: with
+AddStringToDictionary: with
+AddStringToDictionary: rabbit
+AddStringToDictionary: pink
+AddStringToDictionary: pink
+AddStringToDictionary: eyes
+AddStringToDictionary: eyes
+AddStringToDictionary: with
+AddStringToDictionary: ran
+AddStringToDictionary: ran
+AddStringToDictionary: pink
+AddStringToDictionary: close
+AddStringToDictionary: close
+AddStringToDictionary: eyes
+AddStringToDictionary: by
+AddStringToDictionary: by
+AddStringToDictionary: ran
+AddStringToDictionary: her
+AddStringToDictionary: her
+Error reading stream: EndOfStreamException.
+DelayTimer: 500 milliseconds delay timer started
+Error reading stream: EndOfStreamException.
+DelayTimer: 500 milliseconds delay timer started
+AddStringToDictionary: close
+DelayTimer: 0 second(s) delay timer ended
+DelayTimer: 0 second(s) delay timer ended
+AddStringToDictionary: by
+AddStringToDictionary: her
+Error reading stream: EndOfStreamException.
+DelayTimer: 500 milliseconds delay timer started
+DelayTimer: 0 second(s) delay timer ended
+DelayTimer: 60 second(s) delay timer ended
+Output:
+--------------------
+the - 21
+her - 15
+of - 15
+and - 12
+a - 9
+or - 9
+she - 9
+was - 9
+alice - 6
+as - 6
+book - 6
+by - 6
+had - 6
+in - 6
+it - 6
+pictures - 6
+sister - 6
+to - 6
+very - 6
+bank - 3
+be - 3
+beginning - 3
+but - 3
+close - 3
+considering - 3
+conversation - 3
+conversations - 3
+could - 3
+daisies - 3
+daisy-chain - 3
+day - 3
+do - 3
+eyes - 3
+feel - 3
+for - 3
+get - 3
+getting - 3
+having - 3
+hot - 3
+into - 3
+is - 3
+made - 3
+making - 3
+mind - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+own - 3
+peeped - 3
+picking - 3
+pink - 3
+pleasure - 3
+rabbit - 3
+ran - 3
+reading - 3
+sitting - 3
+sleepy - 3
+so - 3
+stupid - 3
+suddenly - 3
+thought - 3
+tired - 3
+trouble - 3
+twice - 3
+up - 3
+use - 3
+well - 3
+what - 3
+when - 3
+whether - 3
+white - 3
+with - 3
+without - 3
+worth - 3
+would - 3
+--------------------
+DelayTimer: 70 second(s) delay timer ended
+DelayTimer: 70 second(s) delay timer ended
+Output:
+--------------------
+the - 21
+her - 15
+of - 15
+and - 12
+a - 9
+or - 9
+she - 9
+was - 9
+alice - 6
+as - 6
+book - 6
+by - 6
+had - 6
+in - 6
+it - 6
+pictures - 6
+sister - 6
+to - 6
+very - 6
+bank - 3
+be - 3
+beginning - 3
+but - 3
+close - 3
+considering - 3
+conversation - 3
+conversations - 3
+could - 3
+daisies - 3
+daisy-chain - 3
+day - 3
+do - 3
+eyes - 3
+feel - 3
+for - 3
+get - 3
+getting - 3
+having - 3
+hot - 3
+into - 3
+is - 3
+made - 3
+making - 3
+mind - 3
+no - 3
+nothing - 3
+on - 3
+once - 3
+own - 3
+peeped - 3
+picking - 3
+pink - 3
+pleasure - 3
+rabbit - 3
+ran - 3
+reading - 3
+sitting - 3
+sleepy - 3
+so - 3
+stupid - 3
+suddenly - 3
+thought - 3
+tired - 3
+trouble - 3
+twice - 3
+up - 3
+use - 3
+well - 3
+what - 3
+when - 3
+whether - 3
+white - 3
+with - 3
+without - 3
+worth - 3
+would - 3
+--------------------
+
+Press a key to go back to menu...
+

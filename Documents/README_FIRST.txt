@@ -1,3 +1,36 @@
+A. KNOWN ISSUES
+===============
+
+1. This is a complete solution for both questions, i.e. question 1 and 2. This solution
+    passes successfully all three unit tests in class StandardTestAsync, namely:
+    
+    StandardTestAsync.TestQuestionOneAsync()
+    StandardTestAsync.TestQuestionTwoMultipleAsync()
+    StandardTestAsync.TestQuestionTwoSingleAsync()
+    
+    The only issue is that when the three unit test are executed in Visual Studio Test
+    Explorer as a batch job, i.e. in an automated way one after the other, sometimes
+    the second and the third test fail. The issues seems to be related to the disposal
+    of the simple character reader object of the first test, i.e. probably it is not
+    disposed on time after the end of the test. Sorry I didn't have the time to investigate
+    this further.
+    
+    When the tests are executed manually in Test Explorer, i.e. one at a time, they
+    always pass successfully.
+    
+    In order to show how my solution works I have created a test program in project
+    
+    KostasTestProgram
+    
+    Please execute the program (Ctlr + F5) in order to see how my solution reads characters
+    from the readers, creates outputs (all at once for question 1 and every 10 seconds for
+    question 2), runs tasks in parallel as required, etc.
+    
+2. I have resolved a previous issue that I had with one of the tests timing out. This is
+    not an issue anymore.
+    
+--------------------------------------------------------------------------------------------------------
+
 A. SOLUTION
 ===========
 
@@ -15,6 +48,13 @@ A. SOLUTION
     
 4. I have included my general assumptions and code comments in the above two classes.
 
+5. For testing purposes (for better visualisation of the results and for debugging purposes)
+    I have also included a test program inside the project:
+    
+    KostasTestProgram
+    
+    Please run this program in order to see the results of my solutions to questions 1 and 2.
+
 --------------------------------------------------------------------------------------------------------
 
 B. DOCUMENTS
@@ -23,44 +63,38 @@ B. DOCUMENTS
 1. This repository also contains a few supporting documents in the top-level folder:
 
     Documents
-
-2. The first supporting document is a screen-shot that shows that the unit tests
-    in the StandardTestAsync class have been completed successfully. It also shows that in
-    order to complete the second test, TestQuestionTwoMultipleAsync, I had to increase
-    the test timeout value from 120000 to 220000, else the test would timeout before
-    completion. This indicates that my solution can improve, please read GENERAL NOTES
-    below for more details.
-
-3. During the implementation of my solution I created a simple test program (not included here)
-    to imitate the three unit tests in StandardTestAsync class. In this program I added 'markers'
-    in order to be able to follow the flow of control between the various asynchronous tasks and also
-    for dubugging purposes.
-
-    I have included the outputs of a couple of runs of my test program, these runs imitate the following
-    two unit tests:
-
-        TestQuestionTwoSingleAsync
-        TestQuestionTwoMultipleAsync
-
-    For the first program run I utilised a single slow reader and for the second program
-    run I utilised multiple (three in total) slow readers running in parallel.
     
-    Those two documents clearly demonstrate producing outputs of the required format in 10 second
-    intervals. I never experienced any timeouts when running my test program, but my
-    delay mechanism was a simple Thread.Sleep(requiredTime) at the end of the main method of
-    the program.
+2. The first supporting document is this document, README_FIRST.txt, that provides an
+    overview of known issues, the solution, the supporting documents, and other general
+    notes.
+
+3. The second supporting document is a screen-shot that shows that all three unit tests
+    in the StandardTestAsync class have been completed successfully.
     
+4. The rest of the supporting documents are a sample set of outputs of my test program
+    for the following scenarios:
+    
+    a. Output for Question 1 with Single Simple Character Reader - imitates test:
+    
+        StandardTestAsync.TestQuestionOneAsync()
+        
+    b. Output for Question 1 with Single Slow Character Reader. It doesn't imitate
+        any of the provided tests.
+    
+    c. Output for Question 2 with Single Slow Character Reader - imitates test:
+    
+        StandardTestAsync.TestQuestionTwoSingleAsync()
+        
+    d. Output for Question 2 with Multiple (3 in total) Slow Character Readers running
+        in parallel - imitates test:
+        
+        StandardTestAsync.TestQuestionTwoMultipleAsync()
+        
 --------------------------------------------------------------------------------------------------------
 
 C. GENERAL NOTES
 ================
+    
+3. For the utilisation of the provided unit test I had to install the following Nuget package:
 
-1. When running my own program I could complete all the tasks within the 2 second timeout.
-    This was not the case for when testing the solution using the provided unit tests. As I
-    mentioned above in this case I had to increase the timout value from 120000 to 220000 for
-    test: TestQuestionTwoMultipleAsync
-    
-2. The provided tests always succeeded when ran one by one. When tried to run the tests as
-    a batch job, running the lot in an automated manner one after the other, sometimes they failed.
-    
-3. Finally the Nuget package needed for running these tests was NUnit3TestAdapter.
+    NUnit3TestAdapter

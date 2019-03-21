@@ -14,6 +14,8 @@ using System.Threading;
 
 using DeveloperTestInterfaces;
 
+using KostasGlobalProperties;
+
 namespace DeveloperTest
 {
      public sealed class DeveloperTestImplementationAsync : IDeveloperTestAsync
@@ -28,14 +30,29 @@ namespace DeveloperTest
         private static readonly int questionOneTimeout = 500;
         private static readonly int questionTwoTimeout = 70000;
 
-        // A boolean flag that activates the 10 second output interval mechanism only when necessary, i.e. only for question 2.
-        // This mechanism by default is de-activated for question 1 and activated for question 2. To fully de-activate this
-        // mechanism for both question 1 and 2 just set the value of this variable, where is used in the code, back to false.
-        private static bool wasCallInitiatedInQuestionTwo = false;
+        // A boolean variable that control if we want to run the application in verbose mode or not. In verbose mode useful
+        // output is produced for better visualisation of the results and debugging purposes. Verbose mode is by default deactivated.
+        // It is the test program in project KostasTestProgram that sets verbose mode to true;
+        private readonly bool verboseMode;
+
+        // A boolean flag that keeps track if method RunQuestionOne() was called directly by a unit test or KostasTestProgram, or
+        // if it was called via RunQuestionTwo() method.
+        private bool wasCallInitiatedInQuestionTwo;
 
         // A dictionary collection that holds words as strings and the frequency of their appearence as integers.
-        // This is declared here in order to allow combining multiple outputs easily (needed for question 2b and 2c).
-        private static readonly IDictionary<string, int> wordDictionary = new Dictionary<string, int>();
+        private readonly IDictionary<string, int> wordDictionary;
+
+        #endregion
+
+        #region Constructors
+
+        // Initiate all the necessary variables in the constructor of the class.
+        public DeveloperTestImplementationAsync()
+        {
+            wordDictionary = new Dictionary<string, int>();
+            wasCallInitiatedInQuestionTwo = false;
+            verboseMode = GlobalProperties.VerboseMode;
+        }
 
         #endregion
 
@@ -126,11 +143,6 @@ namespace DeveloperTest
                 {
                     try
                     {
-                        // This is a conditional method (the condition is located within the method
-                        // implementation). It is used only by the solution for question 2 in order
-                        // to generate an output every 10 seconds or any other specified interval.
-                        CreateIntervalOutputs(wordDictionary, output, delayInterval);
-
                         // This is the main loop that reads a stream of characters, one by one,
                         // processes the characters according to the assumptions made above, forms
                         // English words and stores these words to a dictionary collection,
@@ -163,9 +175,12 @@ namespace DeveloperTest
 
                     // Sort the dictionary by word frequency and then alphabetically and then
                     // create the required output. The delay period is part of the mechanism that
-                    // allows to create an output on specified intervals. The default value is
-                    // zero, meaning an immediate creation of the output.
-                    CreateOutputAsync(SortDictionary(wordDictionary), output, defaultDelayPeriod);
+                    // allows to create an output on specified intervals and it is used only for
+                    // question two. The default value is zero, meaning an immediate creation of the output.
+                    if (!wasCallInitiatedInQuestionTwo)
+                    {
+                        CreateOutputAsync(SortDictionary(wordDictionary), output, defaultDelayPeriod);
+                    }
 
                     // Allow some time for the completion of this task before exiting.
                     await DelayTimerAsync(questionOneTimeout);
@@ -264,6 +279,9 @@ namespace DeveloperTest
         /// <param name="str">A given string to be added to the dictionary.</param>
         private void AddStringToDictionary(IDictionary<string, int> dictionary, string str)
         {
+            // The next line only used in verbose mode for testing purposes.
+            if (verboseMode) Console.WriteLine($"AddStringToDictionary: {str}");
+
             if (dictionary != null)
             {
                 if (!dictionary.TryGetValue(str, out int value))
@@ -308,7 +326,23 @@ namespace DeveloperTest
         {
             return Task.Run(() =>
             {
+                // The following if block is only used in verbose mode.
+                if (verboseMode)
+                {
+                    if (delayPeriod >= 1000)
+                    {
+                        Console.WriteLine($"DelayTimer: {delayPeriod / 1000} second(s) delay timer started");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"DelayTimer: {delayPeriod} milliseconds delay timer started");
+                    }
+                }
+
                 Thread.Sleep(delayPeriod);
+
+                // The following if block is only used in verbose mode.
+                if (verboseMode) Console.WriteLine($"DelayTimer: {delayPeriod / 1000} second(s) delay timer ended");
             });
         }
 
@@ -336,10 +370,17 @@ namespace DeveloperTest
         {
             return Task.Run(() =>
             {
+                // The following tow lines are only used in verbose mode.
+                if(verboseMode) Console.WriteLine("Output:");
+                if (verboseMode) Console.WriteLine("--------------------");
+
                 foreach (var pair in pairs)
                 {
                     output.AddResult($"{pair.Key} - {pair.Value.ToString()}");
                 }
+
+                // The following line is only used in verbose mode.
+                if (verboseMode) Console.WriteLine("--------------------");
             });
         }
 
@@ -371,12 +412,31 @@ namespace DeveloperTest
 
             return Task.Run(async () =>
             {
-                foreach (var reader in readers)
-                {
-                    Task task = RunQuestionOneAsync(reader, output);
+                // Create a timer that will wait for this task to complete.
+                Task mainTimer = DelayTimerAsync(questionTwoTimeout);
 
-                    await DelayTimerAsync(questionTwoTimeout);
+                // Create an array of tasks that has the same length with the array of readers
+                // that is passed as a parameter to this method.
+                Task[] tasks = new Task[readers.Length];
+
+                // Create a task per reader in order to be able to call the solution for
+                // question one asynchronously per reader.
+                for (int index = 0; index < readers.Length; index++)
+                {
+                    tasks[index] = RunQuestionOneAsync(readers[index], output);
                 }
+
+                // Create an output every 10 seconds (or any other given interval).
+                CreateIntervalOutputs(wordDictionary, output);
+
+                // Await the Question One tasks to complete.
+                for (int index = 0; index < readers.Length; index++)
+                {
+                    await tasks[index];
+                }
+
+                // Await the main timer to complete.
+                await mainTimer;
             });
         }
 

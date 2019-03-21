@@ -24,7 +24,7 @@ namespace DeveloperTestFramework
             }
         }
 
-        [Test, Timeout(220000)] // Timeout parameter value changed from 120000 to 220000 by Kostas.
+        [Test, Timeout(120000)]
         public async Task TestQuestionTwoMultipleAsync()
         {
             var output = new Question2TestOutput();
